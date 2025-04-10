@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Somen Bera - Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    #portfolio.two, #projects, #services {
+      padding: 4em 2em;
+      text-align: center;
+      background: #f7f7f7;
+    }
+
+    .education-card, .project-card, .service-card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 1.2em;
+      margin: 1em auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .education-card h3, .project-card h3, .service-card h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .education-card p, .project-card p, .service-card p {
+      margin: 0.4em 0 0;
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    #confirmation {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+      display: none;
+      animation: fadeIn 1s;
+    }
+
+    .spinner {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+      margin-left: 10px;
+      display: none;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="is-preload">
+
+  <!-- Header -->
+  <div id="header">
+    <div class="top">
+      <div id="logo">
+        <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+        <h1 id="title">Somen Bera</h1>
+        <p>MBA Analytics</p>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#top" id="top-link"><span class="icon solid fa-home">My Bio</span></a></li>
+          <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Education</span></a></li>
+          <li><a href="#projects" id="projects-link"><span class="icon solid fa-code">Projects</span></a></li>
+          <li><a href="#services" id="services-link"><span class="icon solid fa-cogs">Services</span></a></li>
+          <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Only GitHub & LinkedIn -->
+    <div class="bottom">
+      <ul class="icons">
+        <li>
+          <a href="https://github.com/Somenbera" target="_blank" class="icon brands fa-github"
+             style="color: #171515; font-size: 1.5em; transition: transform 0.3s;"
+             onmouseover="this.style.transform='scale(1.2)'"
+             onmouseout="this.style.transform='scale(1)'"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/somen-bera-87ab3121b" target="_blank" class="icon brands fa-linkedin"
+             style="color: #0e76a8; font-size: 1.5em; transition: transform 0.3s;"
+             onmouseover="this.style.transform='scale(1.2)'"
+             onmouseout="this.style.transform='scale(1)'"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div id="main">
+
+    <!-- My Bio -->
+    <section id="top" class="one dark cover animate__animated animate__fadeIn">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <header>
+              <h2 class="alt small-heading" style="font-size:1.5em;">
+                Hi! I'm <strong>Somen Bera</strong>, an MBA student specializing in Analytics with a major in Finance.<br />
+                I have a strong interest in using data and financial insights to solve real-world business problems.<br />
+                My passion lies in analyzing market trends, making data-driven decisions, and optimizing financial strategies for better business outcomes.
+              </h2>
+            </header>
+            <div style="margin-top: 1.5em;">
+              <a href="https://www.linkedin.com/in/somen-bera-87ab3121b" target="_blank" class="icon brands fa-linkedin" 
+                 style="font-size: 1.5em; margin: 0 10px; color: #0e76a8; transition: transform 0.3s ease;"
+                 onmouseover="this.style.transform='scale(1.2)'" 
+                 onmouseout="this.style.transform='scale(1)'"></a>
+              <a href="https://github.com/Somenbera" target="_blank" class="icon brands fa-github" 
+                 style="font-size: 1.5em; margin: 0 10px; color: #171515; transition: transform 0.3s ease;"
+                 onmouseover="this.style.transform='scale(1.2)'" 
+                 onmouseout="this.style.transform='scale(1)'"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="portfolio" class="two">
+      <div class="container">
+        <header><h2>Education</h2></header>
+        <div class="education-card"><h3>Graduation</h3><p>Wesley Degree College (2018–2021), Osmania University</p></div>
+        <div class="education-card"><h3>Higher Secondary School (12th)</h3><p>Kendriya Vidyalaya No. 1 (2017–2018), CBSE</p></div>
+        <div class="education-card"><h3>Secondary School (10th)</h3><p>Kendriya Vidyalaya Picket (2015–2016), CBSE</p></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <header><h2>Projects</h2></header>
+
+        <div class="project-card">
+          <h3>Project 1: Tableau – 2018 WB Indicators Analysis</h3>
+          <p>Developed an interactive Tableau dashboard using 2018 WB Indicators data. The project involved data cleaning, diverse visualizations (bar, bubble, map, dual-axis), and dashboard integration. Key insights included regional trends and cross-filtering interactivity. <br />
+          <a href="https://public.tableau.com/app/profile/somen.bera/vizzes" target="_blank">View Project 1 on Tableau Public</a></p>
+        </div>
+
+        <div class="project-card">
+          <h3>Project 2: EDA Analysis Using Python</h3>
+          <p>Performed exploratory data analysis (EDA) on the 'swiggy.csv' dataset. Analyzed statistics, handled missing values, and created a correlation heatmap for insights. The project provided a comprehensive understanding of relationships within the dataset.<br />
+          <a href="https://github.com/Somenbera/EDA--Using-Python/tree/main" target="_blank">View Project 2 on GitHub</a></p>
+        </div>
+
+        <div class="project-card">
+          <h3>Project 3: Minor Project (Research)</h3>
+          <p>Conducted a research-based project on "The Role of Green Finance in Achieving Long-Term Growth for Sustainable Development." It involved defining a research problem, reviewing literature, forming hypotheses, and conducting data analysis. The study aimed to identify the contribution of green financial strategies toward sustainable development goals.<br />
+          <a href="https://drive.google.com/file/d/1vdcwbSp7zvAE3X3OJAT8q-w8mltZCUQl/view?usp=sharing" target="_blank">View Project 3 Report</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <header><h2>Services</h2></header>
+        <div class="service-card">
+          <h3>Financial Data Analysis</h3>
+          <p>Offering actionable insights through detailed financial data evaluation using Excel, Python, R, or Power BI.</p>
+        </div>
+        <div class="service-card">
+          <h3>Business Intelligence & Dashboarding</h3>
+          <p>Designing interactive dashboards for financial KPIs, trend analysis, and forecasting using Power BI / Tableau.</p>
+        </div>
+        <div class="service-card">
+          <h3>Budgeting & Forecasting</h3>
+          <p>Preparing detailed financial budgets and predictive forecasts using historical trends, seasonality, and market data.</p>
+        </div>
+        <div class="service-card">
+          <h3>Tally Software</h3>
+          <p>Proficient in Tally for accounting operations, invoicing, GST compliance, and financial reporting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="four">
+      <div class="container">
+        <header><h2>Contact</h2></header>
+        <p>If you're interested in collaborating or have any questions, feel free to reach out!</p>
+        <form id="contact-form" action="https://formspree.io/f/mwplanpj" method="POST">
+          <div class="row">
+            <div class="col-6 col-12-mobile">
+              <input type="text" name="name" placeholder="Name" required />
+            </div>
+            <div class="col-6 col-12-mobile">
+              <input type="text" name="email_or_phone" placeholder="Email or Phone Number" required />
+            </div>
+            <div class="col-12">
+              <textarea name="message" placeholder="Message" required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit">Send Message <span class="spinner" id="spinner"></span></button>
+            </div>
+            <div id="confirmation">✅ Thank you! Your message has been sent.</div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">
+    <ul class="icons" style="text-align: center; margin-bottom: 1em;">
+      <li>
+        <a href="https://github.com/Somenbera" target="_blank" class="icon brands fa-github"
+           style="font-size: 1.5em; color: #171515; transition: transform 0.3s ease;"
+           onmouseover="this.style.transform='scale(1.2)'" 
+           onmouseout="this.style.transform='scale(1)'"></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/somen-bera-87ab3121b" target="_blank" class="icon brands fa-linkedin"
+           style="font-size: 1.5em; color: #0e76a8; transition: transform 0.3s ease;"
+           onmouseover="this.style.transform='scale(1.2)'" 
+           onmouseout="this.style.transform='scale(1)'"></a>
+      </li>
+    </ul>
+    <ul class="copyright">
+      <li>&copy; Somen Bera. All rights reserved.</li>
+      <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+    </ul>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    const form = document.getElementById('contact-form');
+    const confirmation = document.getElementById('confirmation');
+    const spinner = document.getElementById('spinner');
+
+    form.addEventListener('submit', function(e) {
+      spinner.style.display = 'inline-block';
+      confirmation.style.display = 'none';
+      e.preventDefault();
+
+      const data = new FormData(form);
+      fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          form.reset();
+          spinner.style.display = 'none';
+          confirmation.style.display = 'block';
+        } else {
+          alert("Oops! Something went wrong.");
+          spinner.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
